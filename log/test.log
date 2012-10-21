@@ -1,0 +1,1190 @@
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (1.7ms)[0m  DELETE FROM "statuses"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "statuses" ("name", "content", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', '2012-10-20 20:32:39', '2012-10-20 20:32:39', 980190962)[0m
+SQLite3::SQLException: table statuses has no column named name: INSERT INTO "statuses" ("name", "content", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', '2012-10-20 20:32:39', '2012-10-20 20:32:39', 980190962)
+  [1m[35m (0.6ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (1.4ms)[0m  DELETE FROM "statuses"
+  [1m[36mFixture Insert (0.4ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 20:33:23', '2012-10-20 20:33:23', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 20:33:23', '2012-10-20 20:33:23', 298486374)
+  [1m[36mFixture Delete (1.1ms)[0m  [1mDELETE FROM "users"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "users" ("created_at", "updated_at", "id") VALUES ('2012-10-20 20:33:23', '2012-10-20 20:33:23', 980190962)
+  [1m[36mFixture Insert (0.3ms)[0m  [1mINSERT INTO "users" ("created_at", "updated_at", "id") VALUES ('2012-10-20 20:33:23', '2012-10-20 20:33:23', 298486374)[0m
+SQLite3::ConstraintException: column email is not unique: INSERT INTO "users" ("created_at", "updated_at", "id") VALUES ('2012-10-20 20:33:23', '2012-10-20 20:33:23', 298486374)
+  [1m[35m (0.5ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (1.2ms)[0m  DELETE FROM "statuses"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 20:33:48', '2012-10-20 20:33:48', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 20:33:48', '2012-10-20 20:33:48', 298486374)
+  [1m[36mFixture Delete (1.4ms)[0m  [1mDELETE FROM "users"[0m
+  [1m[35m (1.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (1.3ms)[0m  DELETE FROM "statuses"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 20:34:54', '2012-10-20 20:34:54', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 20:34:54', '2012-10-20 20:34:54', 298486374)
+  [1m[36mFixture Delete (1.5ms)[0m  [1mDELETE FROM "users"[0m
+  [1m[35m (1.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM "statuses"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 20:35:52', '2012-10-20 20:35:52', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 20:35:52', '2012-10-20 20:35:52', 298486374)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "users"[0m
+  [1m[35m (1.1ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM "statuses"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 20:38:40', '2012-10-20 20:38:40', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 20:38:40', '2012-10-20 20:38:40', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "users"[0m
+  [1m[35m (1.2ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.6ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (1.1ms)[0m  DELETE FROM "statuses"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 20:44:15', '2012-10-20 20:44:15', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 20:44:15', '2012-10-20 20:44:15', 298486374)
+  [1m[36mFixture Delete (1.1ms)[0m  [1mDELETE FROM "users"[0m
+  [1m[35m (1.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.7ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (1.2ms)[0m  DELETE FROM "statuses"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 20:44:56', '2012-10-20 20:44:56', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 20:44:56', '2012-10-20 20:44:56', 298486374)
+  [1m[36mFixture Delete (1.2ms)[0m  [1mDELETE FROM "users"[0m
+  [1m[35m (1.1ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (1.1ms)[0m  DELETE FROM "statuses"
+  [1m[36mFixture Insert (0.7ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 20:45:33', '2012-10-20 20:45:33', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 20:45:33', '2012-10-20 20:45:33', 298486374)
+  [1m[36mFixture Delete (1.3ms)[0m  [1mDELETE FROM "users"[0m
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM "statuses"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 20:47:07', '2012-10-20 20:47:07', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 20:47:07', '2012-10-20 20:47:07', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "users"[0m
+  [1m[35m (1.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM "statuses"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 20:47:41', '2012-10-20 20:47:41', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 20:47:41', '2012-10-20 20:47:41', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "users"[0m
+  [1m[35m (1.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'moiz@moiz.org' LIMIT 1[0m
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[35mSQL (3.1ms)[0m  INSERT INTO "users" ("created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "first_name", "last_name", "last_sign_in_at", "last_sign_in_ip", "profile_name", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Sat, 20 Oct 2012 20:47:41 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "moiz@moiz.org"], ["encrypted_password", "$2a$04$bVX/3V3SRu5gcI6YCjLm/eQOdr2HJHmW505leIQu9F2toZI3fiDkG"], ["first_name", "Moiz"], ["last_name", "Malik"], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["profile_name", "moiz1"], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["updated_at", Sat, 20 Oct 2012 20:47:41 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.4ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (1.3ms)[0m  DELETE FROM "statuses"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 21:05:21', '2012-10-20 21:05:21', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 21:05:21', '2012-10-20 21:05:21', 298486374)
+  [1m[36mFixture Delete (2.7ms)[0m  [1mDELETE FROM "users"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "users" ("first_name", "created_at", "updated_at", "id") VALUES ('Moiz', '2012-10-20 21:05:21', '2012-10-20 21:05:21', 795620373)
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."profile_name" IS NULL LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."profile_name" IS NULL LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."profile_name" IS NULL LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'moiz@moiz.org' LIMIT 1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."profile_name" = 'moiz1' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[36mSQL (2.6ms)[0m  [1mINSERT INTO "users" ("created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "first_name", "last_name", "last_sign_in_at", "last_sign_in_ip", "profile_name", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Sat, 20 Oct 2012 21:05:21 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "moiz@moiz.org"], ["encrypted_password", "$2a$04$NAOGTUuUcNKQXf5tzh8XmOE7gZX12wg213r4.988moo./MJ7whUda"], ["first_name", "Moiz"], ["last_name", "Malik"], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["profile_name", "moiz1"], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["updated_at", Sat, 20 Oct 2012 21:05:21 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (1.0ms)[0m  DELETE FROM "statuses"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 21:06:28', '2012-10-20 21:06:28', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 21:06:28', '2012-10-20 21:06:28', 298486374)
+  [1m[36mFixture Delete (1.6ms)[0m  [1mDELETE FROM "users"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "password", "password_confirmation", "created_at", "updated_at", "id") VALUES ('Moiz', 'Malik', 'moiz@moiz.org', 'moizk', 'password', 'password', '2012-10-20 21:06:28', '2012-10-20 21:06:28', 795620373)
+SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "password", "password_confirmation", "created_at", "updated_at", "id") VALUES ('Moiz', 'Malik', 'moiz@moiz.org', 'moizk', 'password', 'password', '2012-10-20 21:06:28', '2012-10-20 21:06:28', 795620373)
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.7ms)[0m  [1mDELETE FROM "statuses"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 21:06:28', '2012-10-20 21:06:28', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 21:06:28', '2012-10-20 21:06:28', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "users"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "password", "password_confirmation", "created_at", "updated_at", "id") VALUES ('Moiz', 'Malik', 'moiz@moiz.org', 'moizk', 'password', 'password', '2012-10-20 21:06:28', '2012-10-20 21:06:28', 795620373)[0m
+SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "password", "password_confirmation", "created_at", "updated_at", "id") VALUES ('Moiz', 'Malik', 'moiz@moiz.org', 'moizk', 'password', 'password', '2012-10-20 21:06:28', '2012-10-20 21:06:28', 795620373)
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM "statuses"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 21:06:28', '2012-10-20 21:06:28', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 21:06:28', '2012-10-20 21:06:28', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "users"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "password", "password_confirmation", "created_at", "updated_at", "id") VALUES ('Moiz', 'Malik', 'moiz@moiz.org', 'moizk', 'password', 'password', '2012-10-20 21:06:28', '2012-10-20 21:06:28', 795620373)
+SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "password", "password_confirmation", "created_at", "updated_at", "id") VALUES ('Moiz', 'Malik', 'moiz@moiz.org', 'moizk', 'password', 'password', '2012-10-20 21:06:28', '2012-10-20 21:06:28', 795620373)
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "statuses"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 21:06:28', '2012-10-20 21:06:28', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 21:06:28', '2012-10-20 21:06:28', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "users"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "password", "password_confirmation", "created_at", "updated_at", "id") VALUES ('Moiz', 'Malik', 'moiz@moiz.org', 'moizk', 'password', 'password', '2012-10-20 21:06:28', '2012-10-20 21:06:28', 795620373)[0m
+SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "password", "password_confirmation", "created_at", "updated_at", "id") VALUES ('Moiz', 'Malik', 'moiz@moiz.org', 'moizk', 'password', 'password', '2012-10-20 21:06:28', '2012-10-20 21:06:28', 795620373)
+  [1m[35m (0.5ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (1.1ms)[0m  DELETE FROM "statuses"
+  [1m[36mFixture Insert (0.4ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 21:07:40', '2012-10-20 21:07:40', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 21:07:40', '2012-10-20 21:07:40', 298486374)
+  [1m[36mFixture Delete (1.1ms)[0m  [1mDELETE FROM "users"[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "password", "password_confirmation", "created_at", "updated_at", "id") VALUES ('Moiz', 'Malik', 'moiz@moiz.org', 'moizk', 'password', 'password', '2012-10-20 21:07:40', '2012-10-20 21:07:40', 795620373)
+SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "password", "password_confirmation", "created_at", "updated_at", "id") VALUES ('Moiz', 'Malik', 'moiz@moiz.org', 'moizk', 'password', 'password', '2012-10-20 21:07:40', '2012-10-20 21:07:40', 795620373)
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.3ms)[0m  [1mDELETE FROM "statuses"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 21:07:40', '2012-10-20 21:07:40', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 21:07:40', '2012-10-20 21:07:40', 298486374)[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "users"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "password", "password_confirmation", "created_at", "updated_at", "id") VALUES ('Moiz', 'Malik', 'moiz@moiz.org', 'moizk', 'password', 'password', '2012-10-20 21:07:40', '2012-10-20 21:07:40', 795620373)[0m
+SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "password", "password_confirmation", "created_at", "updated_at", "id") VALUES ('Moiz', 'Malik', 'moiz@moiz.org', 'moizk', 'password', 'password', '2012-10-20 21:07:40', '2012-10-20 21:07:40', 795620373)
+  [1m[35m (3.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM "statuses"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 21:07:40', '2012-10-20 21:07:40', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 21:07:40', '2012-10-20 21:07:40', 298486374)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "users"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "password", "password_confirmation", "created_at", "updated_at", "id") VALUES ('Moiz', 'Malik', 'moiz@moiz.org', 'moizk', 'password', 'password', '2012-10-20 21:07:40', '2012-10-20 21:07:40', 795620373)
+SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "password", "password_confirmation", "created_at", "updated_at", "id") VALUES ('Moiz', 'Malik', 'moiz@moiz.org', 'moizk', 'password', 'password', '2012-10-20 21:07:40', '2012-10-20 21:07:40', 795620373)
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.5ms)[0m  [1mDELETE FROM "statuses"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 21:07:40', '2012-10-20 21:07:40', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 21:07:40', '2012-10-20 21:07:40', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "users"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "password", "password_confirmation", "created_at", "updated_at", "id") VALUES ('Moiz', 'Malik', 'moiz@moiz.org', 'moizk', 'password', 'password', '2012-10-20 21:07:40', '2012-10-20 21:07:40', 795620373)[0m
+SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "password", "password_confirmation", "created_at", "updated_at", "id") VALUES ('Moiz', 'Malik', 'moiz@moiz.org', 'moizk', 'password', 'password', '2012-10-20 21:07:40', '2012-10-20 21:07:40', 795620373)
+  [1m[35m (0.5ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (1.2ms)[0m  DELETE FROM "statuses"
+  [1m[36mFixture Insert (0.3ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 21:11:28', '2012-10-20 21:11:28', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 21:11:28', '2012-10-20 21:11:28', 298486374)
+  [1m[36mFixture Delete (1.4ms)[0m  [1mDELETE FROM "users"[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "password", "password_confirmation", "created_at", "updated_at", "id") VALUES ('Moiz', 'Malik', 'moiz@moiz.org', 'moizk', 'password', 'password', '2012-10-20 21:11:28', '2012-10-20 21:11:28', 795620373)
+SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "password", "password_confirmation", "created_at", "updated_at", "id") VALUES ('Moiz', 'Malik', 'moiz@moiz.org', 'moizk', 'password', 'password', '2012-10-20 21:11:28', '2012-10-20 21:11:28', 795620373)
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.4ms)[0m  [1mDELETE FROM "statuses"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 21:11:28', '2012-10-20 21:11:28', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 21:11:28', '2012-10-20 21:11:28', 298486374)[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "users"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "password", "password_confirmation", "created_at", "updated_at", "id") VALUES ('Moiz', 'Malik', 'moiz@moiz.org', 'moizk', 'password', 'password', '2012-10-20 21:11:28', '2012-10-20 21:11:28', 795620373)[0m
+SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "password", "password_confirmation", "created_at", "updated_at", "id") VALUES ('Moiz', 'Malik', 'moiz@moiz.org', 'moizk', 'password', 'password', '2012-10-20 21:11:28', '2012-10-20 21:11:28', 795620373)
+  [1m[35m (0.7ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM "statuses"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 21:11:28', '2012-10-20 21:11:28', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 21:11:28', '2012-10-20 21:11:28', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "users"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "password", "password_confirmation", "created_at", "updated_at", "id") VALUES ('Moiz', 'Malik', 'moiz@moiz.org', 'moizk', 'password', 'password', '2012-10-20 21:11:28', '2012-10-20 21:11:28', 795620373)
+SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "password", "password_confirmation", "created_at", "updated_at", "id") VALUES ('Moiz', 'Malik', 'moiz@moiz.org', 'moizk', 'password', 'password', '2012-10-20 21:11:28', '2012-10-20 21:11:28', 795620373)
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.4ms)[0m  [1mDELETE FROM "statuses"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 21:11:28', '2012-10-20 21:11:28', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 21:11:28', '2012-10-20 21:11:28', 298486374)[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "users"
+  [1m[36mFixture Insert (0.3ms)[0m  [1mINSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "password", "password_confirmation", "created_at", "updated_at", "id") VALUES ('Moiz', 'Malik', 'moiz@moiz.org', 'moizk', 'password', 'password', '2012-10-20 21:11:28', '2012-10-20 21:11:28', 795620373)[0m
+SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "password", "password_confirmation", "created_at", "updated_at", "id") VALUES ('Moiz', 'Malik', 'moiz@moiz.org', 'moizk', 'password', 'password', '2012-10-20 21:11:28', '2012-10-20 21:11:28', 795620373)
+  [1m[35m (0.5ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.9ms)[0m  DELETE FROM "statuses"
+  [1m[36mFixture Insert (0.5ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 21:12:02', '2012-10-20 21:12:02', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 21:12:02', '2012-10-20 21:12:02', 298486374)
+  [1m[36mFixture Delete (1.0ms)[0m  [1mDELETE FROM "users"[0m
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."profile_name" IS NULL LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."profile_name" IS NULL LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."profile_name" IS NULL LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."email" = 'moiz@moiz.org' LIMIT 1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."profile_name" = 'moiz1' LIMIT 1[0m
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[35mSQL (2.9ms)[0m  INSERT INTO "users" ("created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "first_name", "last_name", "last_sign_in_at", "last_sign_in_ip", "profile_name", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Sat, 20 Oct 2012 21:12:02 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "moiz@moiz.org"], ["encrypted_password", "$2a$04$nTgsGkQx7cxsLxptbBEL3.i2XjlnBkcXzU7wuXgUbUFSHPEwtoGyq"], ["first_name", "Moiz"], ["last_name", "Malik"], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["profile_name", "moiz1"], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["updated_at", Sat, 20 Oct 2012 21:12:02 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.4ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (1.1ms)[0m  DELETE FROM "statuses"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 21:14:05', '2012-10-20 21:14:05', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 21:14:05', '2012-10-20 21:14:05', 298486374)
+  [1m[36mFixture Delete (1.4ms)[0m  [1mDELETE FROM "users"[0m
+  [1m[35m (1.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."profile_name" IS NULL LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."profile_name" IS NULL LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."profile_name" IS NULL LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."email" = 'moiz@moiz.org' LIMIT 1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."profile_name" = 'moiz1' LIMIT 1[0m
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[35mSQL (3.3ms)[0m  INSERT INTO "users" ("created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "first_name", "last_name", "last_sign_in_at", "last_sign_in_ip", "profile_name", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Sat, 20 Oct 2012 21:14:05 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "moiz@moiz.org"], ["encrypted_password", "$2a$04$WbK6j5lk18Rl.Wck1PvozuosAaa7xfDJXm71bg2/d5gckw.JS6d4u"], ["first_name", "Moiz"], ["last_name", "Malik"], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["profile_name", "moiz1"], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["updated_at", Sat, 20 Oct 2012 21:14:05 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.4ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (1.2ms)[0m  DELETE FROM "statuses"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 21:18:56', '2012-10-20 21:18:56', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 21:18:56', '2012-10-20 21:18:56', 298486374)
+  [1m[36mFixture Delete (1.5ms)[0m  [1mDELETE FROM "users"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "password", "password_confirmation", "created_at", "updated_at", "id") VALUES ('Moiz', 'Malik', 'moiz@moiz.org', 'moiz1', 'password', 'password', '2012-10-20 21:18:56', '2012-10-20 21:18:56', 130925149)
+SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "password", "password_confirmation", "created_at", "updated_at", "id") VALUES ('Moiz', 'Malik', 'moiz@moiz.org', 'moiz1', 'password', 'password', '2012-10-20 21:18:56', '2012-10-20 21:18:56', 130925149)
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "statuses"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 21:18:56', '2012-10-20 21:18:56', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 21:18:56', '2012-10-20 21:18:56', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "users"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "password", "password_confirmation", "created_at", "updated_at", "id") VALUES ('Moiz', 'Malik', 'moiz@moiz.org', 'moiz1', 'password', 'password', '2012-10-20 21:18:56', '2012-10-20 21:18:56', 130925149)[0m
+SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "password", "password_confirmation", "created_at", "updated_at", "id") VALUES ('Moiz', 'Malik', 'moiz@moiz.org', 'moiz1', 'password', 'password', '2012-10-20 21:18:56', '2012-10-20 21:18:56', 130925149)
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM "statuses"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 21:18:56', '2012-10-20 21:18:56', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 21:18:56', '2012-10-20 21:18:56', 298486374)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "users"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "password", "password_confirmation", "created_at", "updated_at", "id") VALUES ('Moiz', 'Malik', 'moiz@moiz.org', 'moiz1', 'password', 'password', '2012-10-20 21:18:56', '2012-10-20 21:18:56', 130925149)
+SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "password", "password_confirmation", "created_at", "updated_at", "id") VALUES ('Moiz', 'Malik', 'moiz@moiz.org', 'moiz1', 'password', 'password', '2012-10-20 21:18:56', '2012-10-20 21:18:56', 130925149)
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.4ms)[0m  [1mDELETE FROM "statuses"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 21:18:56', '2012-10-20 21:18:56', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 21:18:56', '2012-10-20 21:18:56', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "users"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "password", "password_confirmation", "created_at", "updated_at", "id") VALUES ('Moiz', 'Malik', 'moiz@moiz.org', 'moiz1', 'password', 'password', '2012-10-20 21:18:56', '2012-10-20 21:18:56', 130925149)[0m
+SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "password", "password_confirmation", "created_at", "updated_at", "id") VALUES ('Moiz', 'Malik', 'moiz@moiz.org', 'moiz1', 'password', 'password', '2012-10-20 21:18:56', '2012-10-20 21:18:56', 130925149)
+  [1m[35m (0.5ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.6ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (1.4ms)[0m  DELETE FROM "statuses"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 21:20:43', '2012-10-20 21:20:43', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 21:20:43', '2012-10-20 21:20:43', 298486374)
+  [1m[36mFixture Delete (1.5ms)[0m  [1mDELETE FROM "users"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "password", "password_confirmation", "created_at", "updated_at", "id") VALUES ('Moiz', 'Malik', 'moiz@moiz.org', 'moiz1', 'password', 'password', '2012-10-20 21:20:43', '2012-10-20 21:20:43', 130925149)
+SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "password", "password_confirmation", "created_at", "updated_at", "id") VALUES ('Moiz', 'Malik', 'moiz@moiz.org', 'moiz1', 'password', 'password', '2012-10-20 21:20:43', '2012-10-20 21:20:43', 130925149)
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.4ms)[0m  [1mDELETE FROM "statuses"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 21:20:44', '2012-10-20 21:20:44', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 21:20:44', '2012-10-20 21:20:44', 298486374)[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "users"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "password", "password_confirmation", "created_at", "updated_at", "id") VALUES ('Moiz', 'Malik', 'moiz@moiz.org', 'moiz1', 'password', 'password', '2012-10-20 21:20:44', '2012-10-20 21:20:44', 130925149)[0m
+SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "password", "password_confirmation", "created_at", "updated_at", "id") VALUES ('Moiz', 'Malik', 'moiz@moiz.org', 'moiz1', 'password', 'password', '2012-10-20 21:20:44', '2012-10-20 21:20:44', 130925149)
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.4ms)[0m  DELETE FROM "statuses"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 21:20:44', '2012-10-20 21:20:44', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 21:20:44', '2012-10-20 21:20:44', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "users"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "password", "password_confirmation", "created_at", "updated_at", "id") VALUES ('Moiz', 'Malik', 'moiz@moiz.org', 'moiz1', 'password', 'password', '2012-10-20 21:20:44', '2012-10-20 21:20:44', 130925149)
+SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "password", "password_confirmation", "created_at", "updated_at", "id") VALUES ('Moiz', 'Malik', 'moiz@moiz.org', 'moiz1', 'password', 'password', '2012-10-20 21:20:44', '2012-10-20 21:20:44', 130925149)
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.3ms)[0m  [1mDELETE FROM "statuses"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 21:20:44', '2012-10-20 21:20:44', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 21:20:44', '2012-10-20 21:20:44', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "users"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "password", "password_confirmation", "created_at", "updated_at", "id") VALUES ('Moiz', 'Malik', 'moiz@moiz.org', 'moiz1', 'password', 'password', '2012-10-20 21:20:44', '2012-10-20 21:20:44', 130925149)[0m
+SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "password", "password_confirmation", "created_at", "updated_at", "id") VALUES ('Moiz', 'Malik', 'moiz@moiz.org', 'moiz1', 'password', 'password', '2012-10-20 21:20:44', '2012-10-20 21:20:44', 130925149)
+  [1m[35m (0.5ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (1.2ms)[0m  DELETE FROM "statuses"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 21:21:14', '2012-10-20 21:21:14', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 21:21:14', '2012-10-20 21:21:14', 298486374)
+  [1m[36mFixture Delete (1.4ms)[0m  [1mDELETE FROM "users"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "password", "password_confirmation", "created_at", "updated_at", "id") VALUES ('Moiz', 'Malik', 'moiz@moiz.org', 'moiz1', 'password', 'password', '2012-10-20 21:21:14', '2012-10-20 21:21:14', 130925149)
+SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "password", "password_confirmation", "created_at", "updated_at", "id") VALUES ('Moiz', 'Malik', 'moiz@moiz.org', 'moiz1', 'password', 'password', '2012-10-20 21:21:14', '2012-10-20 21:21:14', 130925149)
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.4ms)[0m  [1mDELETE FROM "statuses"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 21:21:14', '2012-10-20 21:21:14', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 21:21:14', '2012-10-20 21:21:14', 298486374)[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "users"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "password", "password_confirmation", "created_at", "updated_at", "id") VALUES ('Moiz', 'Malik', 'moiz@moiz.org', 'moiz1', 'password', 'password', '2012-10-20 21:21:14', '2012-10-20 21:21:14', 130925149)[0m
+SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "password", "password_confirmation", "created_at", "updated_at", "id") VALUES ('Moiz', 'Malik', 'moiz@moiz.org', 'moiz1', 'password', 'password', '2012-10-20 21:21:14', '2012-10-20 21:21:14', 130925149)
+  [1m[35m (0.5ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM "statuses"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 21:21:14', '2012-10-20 21:21:14', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 21:21:14', '2012-10-20 21:21:14', 298486374)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "users"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "password", "password_confirmation", "created_at", "updated_at", "id") VALUES ('Moiz', 'Malik', 'moiz@moiz.org', 'moiz1', 'password', 'password', '2012-10-20 21:21:14', '2012-10-20 21:21:14', 130925149)
+SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "password", "password_confirmation", "created_at", "updated_at", "id") VALUES ('Moiz', 'Malik', 'moiz@moiz.org', 'moiz1', 'password', 'password', '2012-10-20 21:21:14', '2012-10-20 21:21:14', 130925149)
+  [1m[36m (2.9ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.3ms)[0m  [1mDELETE FROM "statuses"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 21:21:14', '2012-10-20 21:21:14', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 21:21:14', '2012-10-20 21:21:14', 298486374)[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "users"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "password", "password_confirmation", "created_at", "updated_at", "id") VALUES ('Moiz', 'Malik', 'moiz@moiz.org', 'moiz1', 'password', 'password', '2012-10-20 21:21:14', '2012-10-20 21:21:14', 130925149)[0m
+SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "password", "password_confirmation", "created_at", "updated_at", "id") VALUES ('Moiz', 'Malik', 'moiz@moiz.org', 'moiz1', 'password', 'password', '2012-10-20 21:21:14', '2012-10-20 21:21:14', 130925149)
+  [1m[35m (0.4ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.4ms)[0m  DELETE FROM "statuses"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 21:24:07', '2012-10-20 21:24:07', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 21:24:07', '2012-10-20 21:24:07', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "users"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "password", "password_confirmation", "created_at", "updated_at", "id") VALUES ('Moiz', 'Malik', 'moiz@moiz.org', 'moiz1', 'password', 'password', '2012-10-20 21:24:07', '2012-10-20 21:24:07', 130925149)
+SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "password", "password_confirmation", "created_at", "updated_at", "id") VALUES ('Moiz', 'Malik', 'moiz@moiz.org', 'moiz1', 'password', 'password', '2012-10-20 21:24:07', '2012-10-20 21:24:07', 130925149)
+  [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.4ms)[0m  [1mDELETE FROM "statuses"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 21:24:07', '2012-10-20 21:24:07', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 21:24:07', '2012-10-20 21:24:07', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "users"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "password", "password_confirmation", "created_at", "updated_at", "id") VALUES ('Moiz', 'Malik', 'moiz@moiz.org', 'moiz1', 'password', 'password', '2012-10-20 21:24:07', '2012-10-20 21:24:07', 130925149)[0m
+SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "password", "password_confirmation", "created_at", "updated_at", "id") VALUES ('Moiz', 'Malik', 'moiz@moiz.org', 'moiz1', 'password', 'password', '2012-10-20 21:24:07', '2012-10-20 21:24:07', 130925149)
+  [1m[35m (0.5ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.4ms)[0m  DELETE FROM "statuses"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 21:24:07', '2012-10-20 21:24:07', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 21:24:07', '2012-10-20 21:24:07', 298486374)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "users"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "password", "password_confirmation", "created_at", "updated_at", "id") VALUES ('Moiz', 'Malik', 'moiz@moiz.org', 'moiz1', 'password', 'password', '2012-10-20 21:24:07', '2012-10-20 21:24:07', 130925149)
+SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "password", "password_confirmation", "created_at", "updated_at", "id") VALUES ('Moiz', 'Malik', 'moiz@moiz.org', 'moiz1', 'password', 'password', '2012-10-20 21:24:07', '2012-10-20 21:24:07', 130925149)
+  [1m[36m (0.9ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.3ms)[0m  [1mDELETE FROM "statuses"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 21:24:07', '2012-10-20 21:24:07', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 21:24:07', '2012-10-20 21:24:07', 298486374)[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "users"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "password", "password_confirmation", "created_at", "updated_at", "id") VALUES ('Moiz', 'Malik', 'moiz@moiz.org', 'moiz1', 'password', 'password', '2012-10-20 21:24:07', '2012-10-20 21:24:07', 130925149)[0m
+SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "password", "password_confirmation", "created_at", "updated_at", "id") VALUES ('Moiz', 'Malik', 'moiz@moiz.org', 'moiz1', 'password', 'password', '2012-10-20 21:24:07', '2012-10-20 21:24:07', 130925149)
+  [1m[35m (0.5ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (1.1ms)[0m  DELETE FROM "statuses"
+  [1m[36mFixture Insert (0.6ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 22:09:41', '2012-10-20 22:09:41', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 22:09:41', '2012-10-20 22:09:41', 298486374)
+  [1m[36mFixture Delete (1.3ms)[0m  [1mDELETE FROM "users"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "password", "password_confirmation", "created_at", "updated_at", "id") VALUES ('Moiz', 'Malik', 'moiz@moiz.org', 'moiz1', 'password', 'password', '2012-10-20 22:09:41', '2012-10-20 22:09:41', 130925149)
+SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "password", "password_confirmation", "created_at", "updated_at", "id") VALUES ('Moiz', 'Malik', 'moiz@moiz.org', 'moiz1', 'password', 'password', '2012-10-20 22:09:41', '2012-10-20 22:09:41', 130925149)
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.3ms)[0m  [1mDELETE FROM "statuses"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 22:09:41', '2012-10-20 22:09:41', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 22:09:41', '2012-10-20 22:09:41', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "users"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "password", "password_confirmation", "created_at", "updated_at", "id") VALUES ('Moiz', 'Malik', 'moiz@moiz.org', 'moiz1', 'password', 'password', '2012-10-20 22:09:41', '2012-10-20 22:09:41', 130925149)[0m
+SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "password", "password_confirmation", "created_at", "updated_at", "id") VALUES ('Moiz', 'Malik', 'moiz@moiz.org', 'moiz1', 'password', 'password', '2012-10-20 22:09:41', '2012-10-20 22:09:41', 130925149)
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM "statuses"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 22:09:41', '2012-10-20 22:09:41', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 22:09:41', '2012-10-20 22:09:41', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "users"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "password", "password_confirmation", "created_at", "updated_at", "id") VALUES ('Moiz', 'Malik', 'moiz@moiz.org', 'moiz1', 'password', 'password', '2012-10-20 22:09:41', '2012-10-20 22:09:41', 130925149)
+SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "password", "password_confirmation", "created_at", "updated_at", "id") VALUES ('Moiz', 'Malik', 'moiz@moiz.org', 'moiz1', 'password', 'password', '2012-10-20 22:09:41', '2012-10-20 22:09:41', 130925149)
+  [1m[36m (0.8ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.4ms)[0m  [1mDELETE FROM "statuses"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 22:09:42', '2012-10-20 22:09:42', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 22:09:42', '2012-10-20 22:09:42', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "users"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "password", "password_confirmation", "created_at", "updated_at", "id") VALUES ('Moiz', 'Malik', 'moiz@moiz.org', 'moiz1', 'password', 'password', '2012-10-20 22:09:42', '2012-10-20 22:09:42', 130925149)[0m
+SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "password", "password_confirmation", "created_at", "updated_at", "id") VALUES ('Moiz', 'Malik', 'moiz@moiz.org', 'moiz1', 'password', 'password', '2012-10-20 22:09:42', '2012-10-20 22:09:42', 130925149)
+  [1m[35m (1.2ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM "statuses"
+  [1m[36mFixture Insert (0.3ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 22:12:55', '2012-10-20 22:12:55', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 22:12:55', '2012-10-20 22:12:55', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "users"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "password", "password_confirmation", "created_at", "updated_at", "id") VALUES ('Moiz', 'Malik', 'moiz@moiz.org', 'moiz1', 'password', 'password', '2012-10-20 22:12:55', '2012-10-20 22:12:55', 130925149)
+SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "password", "password_confirmation", "created_at", "updated_at", "id") VALUES ('Moiz', 'Malik', 'moiz@moiz.org', 'moiz1', 'password', 'password', '2012-10-20 22:12:55', '2012-10-20 22:12:55', 130925149)
+  [1m[36m (1.8ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.3ms)[0m  [1mDELETE FROM "statuses"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 22:12:55', '2012-10-20 22:12:55', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 22:12:55', '2012-10-20 22:12:55', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "users"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "password", "password_confirmation", "created_at", "updated_at", "id") VALUES ('Moiz', 'Malik', 'moiz@moiz.org', 'moiz1', 'password', 'password', '2012-10-20 22:12:55', '2012-10-20 22:12:55', 130925149)[0m
+SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "password", "password_confirmation", "created_at", "updated_at", "id") VALUES ('Moiz', 'Malik', 'moiz@moiz.org', 'moiz1', 'password', 'password', '2012-10-20 22:12:55', '2012-10-20 22:12:55', 130925149)
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.4ms)[0m  DELETE FROM "statuses"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 22:12:55', '2012-10-20 22:12:55', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 22:12:55', '2012-10-20 22:12:55', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "users"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "password", "password_confirmation", "created_at", "updated_at", "id") VALUES ('Moiz', 'Malik', 'moiz@moiz.org', 'moiz1', 'password', 'password', '2012-10-20 22:12:55', '2012-10-20 22:12:55', 130925149)
+SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "password", "password_confirmation", "created_at", "updated_at", "id") VALUES ('Moiz', 'Malik', 'moiz@moiz.org', 'moiz1', 'password', 'password', '2012-10-20 22:12:55', '2012-10-20 22:12:55', 130925149)
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.4ms)[0m  [1mDELETE FROM "statuses"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 22:12:55', '2012-10-20 22:12:55', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 22:12:55', '2012-10-20 22:12:55', 298486374)[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "users"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "password", "password_confirmation", "created_at", "updated_at", "id") VALUES ('Moiz', 'Malik', 'moiz@moiz.org', 'moiz1', 'password', 'password', '2012-10-20 22:12:55', '2012-10-20 22:12:55', 130925149)[0m
+SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "password", "password_confirmation", "created_at", "updated_at", "id") VALUES ('Moiz', 'Malik', 'moiz@moiz.org', 'moiz1', 'password', 'password', '2012-10-20 22:12:55', '2012-10-20 22:12:55', 130925149)
+  [1m[35m (0.5ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM "statuses"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 22:14:00', '2012-10-20 22:14:00', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 22:14:00', '2012-10-20 22:14:00', 298486374)
+  [1m[36mFixture Delete (0.3ms)[0m  [1mDELETE FROM "users"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "password", "password_confirmation", "created_at", "updated_at", "id") VALUES ('Moiz', 'Malik', 'moiz@moiz.org', 'moiz1', 'password', 'password', '2012-10-20 22:14:00', '2012-10-20 22:14:00', 795620373)
+SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "password", "password_confirmation", "created_at", "updated_at", "id") VALUES ('Moiz', 'Malik', 'moiz@moiz.org', 'moiz1', 'password', 'password', '2012-10-20 22:14:00', '2012-10-20 22:14:00', 795620373)
+  [1m[36m (1.8ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.6ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.4ms)[0m  [1mDELETE FROM "statuses"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 22:14:00', '2012-10-20 22:14:00', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 22:14:00', '2012-10-20 22:14:00', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "users"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "password", "password_confirmation", "created_at", "updated_at", "id") VALUES ('Moiz', 'Malik', 'moiz@moiz.org', 'moiz1', 'password', 'password', '2012-10-20 22:14:00', '2012-10-20 22:14:00', 795620373)[0m
+SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "password", "password_confirmation", "created_at", "updated_at", "id") VALUES ('Moiz', 'Malik', 'moiz@moiz.org', 'moiz1', 'password', 'password', '2012-10-20 22:14:00', '2012-10-20 22:14:00', 795620373)
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM "statuses"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 22:14:00', '2012-10-20 22:14:00', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 22:14:00', '2012-10-20 22:14:00', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "users"[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "password", "password_confirmation", "created_at", "updated_at", "id") VALUES ('Moiz', 'Malik', 'moiz@moiz.org', 'moiz1', 'password', 'password', '2012-10-20 22:14:00', '2012-10-20 22:14:00', 795620373)
+SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "password", "password_confirmation", "created_at", "updated_at", "id") VALUES ('Moiz', 'Malik', 'moiz@moiz.org', 'moiz1', 'password', 'password', '2012-10-20 22:14:00', '2012-10-20 22:14:00', 795620373)
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.5ms)[0m  [1mDELETE FROM "statuses"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 22:14:00', '2012-10-20 22:14:00', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 22:14:00', '2012-10-20 22:14:00', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "users"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "password", "password_confirmation", "created_at", "updated_at", "id") VALUES ('Moiz', 'Malik', 'moiz@moiz.org', 'moiz1', 'password', 'password', '2012-10-20 22:14:00', '2012-10-20 22:14:00', 795620373)[0m
+SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "password", "password_confirmation", "created_at", "updated_at", "id") VALUES ('Moiz', 'Malik', 'moiz@moiz.org', 'moiz1', 'password', 'password', '2012-10-20 22:14:00', '2012-10-20 22:14:00', 795620373)
+  [1m[35m (0.5ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.4ms)[0m  DELETE FROM "statuses"
+  [1m[36mFixture Insert (0.3ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 22:14:59', '2012-10-20 22:14:59', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 22:14:59', '2012-10-20 22:14:59', 298486374)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "users"[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "password", "password_confirmation", "created_at", "updated_at", "id") VALUES ('Moiz', 'Malik', 'moiz@moiz.org', 'moiz1', 'password', 'password', '2012-10-20 22:14:59', '2012-10-20 22:14:59', 795620373)
+SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "password", "password_confirmation", "created_at", "updated_at", "id") VALUES ('Moiz', 'Malik', 'moiz@moiz.org', 'moiz1', 'password', 'password', '2012-10-20 22:14:59', '2012-10-20 22:14:59', 795620373)
+  [1m[36m (0.7ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.4ms)[0m  [1mDELETE FROM "statuses"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 22:14:59', '2012-10-20 22:14:59', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 22:14:59', '2012-10-20 22:14:59', 298486374)[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "users"
+  [1m[36mFixture Insert (0.3ms)[0m  [1mINSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "password", "password_confirmation", "created_at", "updated_at", "id") VALUES ('Moiz', 'Malik', 'moiz@moiz.org', 'moiz1', 'password', 'password', '2012-10-20 22:14:59', '2012-10-20 22:14:59', 795620373)[0m
+SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "password", "password_confirmation", "created_at", "updated_at", "id") VALUES ('Moiz', 'Malik', 'moiz@moiz.org', 'moiz1', 'password', 'password', '2012-10-20 22:14:59', '2012-10-20 22:14:59', 795620373)
+  [1m[35m (0.5ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM "statuses"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 22:14:59', '2012-10-20 22:14:59', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 22:14:59', '2012-10-20 22:14:59', 298486374)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "users"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "password", "password_confirmation", "created_at", "updated_at", "id") VALUES ('Moiz', 'Malik', 'moiz@moiz.org', 'moiz1', 'password', 'password', '2012-10-20 22:14:59', '2012-10-20 22:14:59', 795620373)
+SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "password", "password_confirmation", "created_at", "updated_at", "id") VALUES ('Moiz', 'Malik', 'moiz@moiz.org', 'moiz1', 'password', 'password', '2012-10-20 22:14:59', '2012-10-20 22:14:59', 795620373)
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.4ms)[0m  [1mDELETE FROM "statuses"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 22:14:59', '2012-10-20 22:14:59', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 22:14:59', '2012-10-20 22:14:59', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "users"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "password", "password_confirmation", "created_at", "updated_at", "id") VALUES ('Moiz', 'Malik', 'moiz@moiz.org', 'moiz1', 'password', 'password', '2012-10-20 22:14:59', '2012-10-20 22:14:59', 795620373)[0m
+SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "password", "password_confirmation", "created_at", "updated_at", "id") VALUES ('Moiz', 'Malik', 'moiz@moiz.org', 'moiz1', 'password', 'password', '2012-10-20 22:14:59', '2012-10-20 22:14:59', 795620373)
+  [1m[35m (0.5ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM "statuses"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 22:16:29', '2012-10-20 22:16:29', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 22:16:29', '2012-10-20 22:16:29', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "users"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "password", "password_confirmation", "created_at", "updated_at", "id") VALUES ('Moiz', 'Malik', 'moiz@moiz.org', 'moiz1', 'password', 'password', '2012-10-20 22:16:29', '2012-10-20 22:16:29', 795620373)
+SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "password", "password_confirmation", "created_at", "updated_at", "id") VALUES ('Moiz', 'Malik', 'moiz@moiz.org', 'moiz1', 'password', 'password', '2012-10-20 22:16:29', '2012-10-20 22:16:29', 795620373)
+  [1m[36m (1.8ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.3ms)[0m  [1mDELETE FROM "statuses"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 22:16:29', '2012-10-20 22:16:29', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 22:16:29', '2012-10-20 22:16:29', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "users"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "password", "password_confirmation", "created_at", "updated_at", "id") VALUES ('Moiz', 'Malik', 'moiz@moiz.org', 'moiz1', 'password', 'password', '2012-10-20 22:16:29', '2012-10-20 22:16:29', 795620373)[0m
+SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "password", "password_confirmation", "created_at", "updated_at", "id") VALUES ('Moiz', 'Malik', 'moiz@moiz.org', 'moiz1', 'password', 'password', '2012-10-20 22:16:29', '2012-10-20 22:16:29', 795620373)
+  [1m[35m (0.5ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.4ms)[0m  DELETE FROM "statuses"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 22:16:29', '2012-10-20 22:16:29', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 22:16:29', '2012-10-20 22:16:29', 298486374)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "users"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "password", "password_confirmation", "created_at", "updated_at", "id") VALUES ('Moiz', 'Malik', 'moiz@moiz.org', 'moiz1', 'password', 'password', '2012-10-20 22:16:29', '2012-10-20 22:16:29', 795620373)
+SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "password", "password_confirmation", "created_at", "updated_at", "id") VALUES ('Moiz', 'Malik', 'moiz@moiz.org', 'moiz1', 'password', 'password', '2012-10-20 22:16:29', '2012-10-20 22:16:29', 795620373)
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.3ms)[0m  [1mDELETE FROM "statuses"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 22:16:29', '2012-10-20 22:16:29', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 22:16:29', '2012-10-20 22:16:29', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "users"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "password", "password_confirmation", "created_at", "updated_at", "id") VALUES ('Moiz', 'Malik', 'moiz@moiz.org', 'moiz1', 'password', 'password', '2012-10-20 22:16:29', '2012-10-20 22:16:29', 795620373)[0m
+SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "password", "password_confirmation", "created_at", "updated_at", "id") VALUES ('Moiz', 'Malik', 'moiz@moiz.org', 'moiz1', 'password', 'password', '2012-10-20 22:16:29', '2012-10-20 22:16:29', 795620373)
+  [1m[35m (0.5ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM "statuses"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 22:21:39', '2012-10-20 22:21:39', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 22:21:39', '2012-10-20 22:21:39', 298486374)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "users"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "password", "password_confirmation", "created_at", "updated_at", "id") VALUES ('Moiz', 'Malik', 'moiz@moiz.org', 'moiz1', 'password', 'password', '2012-10-20 22:21:40', '2012-10-20 22:21:40', 795620373)
+SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "password", "password_confirmation", "created_at", "updated_at", "id") VALUES ('Moiz', 'Malik', 'moiz@moiz.org', 'moiz1', 'password', 'password', '2012-10-20 22:21:40', '2012-10-20 22:21:40', 795620373)
+  [1m[36m (1.7ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.4ms)[0m  [1mDELETE FROM "statuses"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 22:21:40', '2012-10-20 22:21:40', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 22:21:40', '2012-10-20 22:21:40', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "users"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "password", "password_confirmation", "created_at", "updated_at", "id") VALUES ('Moiz', 'Malik', 'moiz@moiz.org', 'moiz1', 'password', 'password', '2012-10-20 22:21:40', '2012-10-20 22:21:40', 795620373)[0m
+SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "password", "password_confirmation", "created_at", "updated_at", "id") VALUES ('Moiz', 'Malik', 'moiz@moiz.org', 'moiz1', 'password', 'password', '2012-10-20 22:21:40', '2012-10-20 22:21:40', 795620373)
+  [1m[35m (1.4ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.4ms)[0m  DELETE FROM "statuses"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 22:21:40', '2012-10-20 22:21:40', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 22:21:40', '2012-10-20 22:21:40', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "users"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "password", "password_confirmation", "created_at", "updated_at", "id") VALUES ('Moiz', 'Malik', 'moiz@moiz.org', 'moiz1', 'password', 'password', '2012-10-20 22:21:40', '2012-10-20 22:21:40', 795620373)
+SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "password", "password_confirmation", "created_at", "updated_at", "id") VALUES ('Moiz', 'Malik', 'moiz@moiz.org', 'moiz1', 'password', 'password', '2012-10-20 22:21:40', '2012-10-20 22:21:40', 795620373)
+  [1m[36m (2.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.4ms)[0m  [1mDELETE FROM "statuses"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 22:21:40', '2012-10-20 22:21:40', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 22:21:40', '2012-10-20 22:21:40', 298486374)[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "users"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "password", "password_confirmation", "created_at", "updated_at", "id") VALUES ('Moiz', 'Malik', 'moiz@moiz.org', 'moiz1', 'password', 'password', '2012-10-20 22:21:40', '2012-10-20 22:21:40', 795620373)[0m
+SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "password", "password_confirmation", "created_at", "updated_at", "id") VALUES ('Moiz', 'Malik', 'moiz@moiz.org', 'moiz1', 'password', 'password', '2012-10-20 22:21:40', '2012-10-20 22:21:40', 795620373)
+  [1m[35m (0.8ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.4ms)[0m  DELETE FROM "statuses"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 22:21:56', '2012-10-20 22:21:56', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 22:21:56', '2012-10-20 22:21:56', 298486374)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "users"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "password", "password_confirmation", "created_at", "updated_at", "id") VALUES ('Moiz', 'Malik', 'moiz@moiz.org', 'moiz1', 'password', 'password', '2012-10-20 22:21:56', '2012-10-20 22:21:56', 795620373)
+SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "password", "password_confirmation", "created_at", "updated_at", "id") VALUES ('Moiz', 'Malik', 'moiz@moiz.org', 'moiz1', 'password', 'password', '2012-10-20 22:21:56', '2012-10-20 22:21:56', 795620373)
+  [1m[36m (1.7ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.4ms)[0m  [1mDELETE FROM "statuses"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 22:21:56', '2012-10-20 22:21:56', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 22:21:56', '2012-10-20 22:21:56', 298486374)[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "users"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "password", "password_confirmation", "created_at", "updated_at", "id") VALUES ('Moiz', 'Malik', 'moiz@moiz.org', 'moiz1', 'password', 'password', '2012-10-20 22:21:56', '2012-10-20 22:21:56', 795620373)[0m
+SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "password", "password_confirmation", "created_at", "updated_at", "id") VALUES ('Moiz', 'Malik', 'moiz@moiz.org', 'moiz1', 'password', 'password', '2012-10-20 22:21:56', '2012-10-20 22:21:56', 795620373)
+  [1m[35m (7.4ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.4ms)[0m  DELETE FROM "statuses"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 22:21:56', '2012-10-20 22:21:56', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 22:21:56', '2012-10-20 22:21:56', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "users"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "password", "password_confirmation", "created_at", "updated_at", "id") VALUES ('Moiz', 'Malik', 'moiz@moiz.org', 'moiz1', 'password', 'password', '2012-10-20 22:21:56', '2012-10-20 22:21:56', 795620373)
+SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "password", "password_confirmation", "created_at", "updated_at", "id") VALUES ('Moiz', 'Malik', 'moiz@moiz.org', 'moiz1', 'password', 'password', '2012-10-20 22:21:56', '2012-10-20 22:21:56', 795620373)
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.4ms)[0m  [1mDELETE FROM "statuses"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 22:21:56', '2012-10-20 22:21:56', 980190962)
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 22:21:56', '2012-10-20 22:21:56', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "users"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "password", "password_confirmation", "created_at", "updated_at", "id") VALUES ('Moiz', 'Malik', 'moiz@moiz.org', 'moiz1', 'password', 'password', '2012-10-20 22:21:56', '2012-10-20 22:21:56', 795620373)[0m
+SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "password", "password_confirmation", "created_at", "updated_at", "id") VALUES ('Moiz', 'Malik', 'moiz@moiz.org', 'moiz1', 'password', 'password', '2012-10-20 22:21:56', '2012-10-20 22:21:56', 795620373)
+  [1m[35m (0.5ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.4ms)[0m  DELETE FROM "statuses"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 22:22:46', '2012-10-20 22:22:46', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 22:22:46', '2012-10-20 22:22:46', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "users"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "password", "password_confirmation", "created_at", "updated_at", "id") VALUES ('Moiz', 'Malik', 'moiz@moiz.org', 'moiz1', 'password', 'password', '2012-10-20 22:22:46', '2012-10-20 22:22:46', 795620373)
+SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "password", "password_confirmation", "created_at", "updated_at", "id") VALUES ('Moiz', 'Malik', 'moiz@moiz.org', 'moiz1', 'password', 'password', '2012-10-20 22:22:46', '2012-10-20 22:22:46', 795620373)
+  [1m[36m (1.8ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.3ms)[0m  [1mDELETE FROM "statuses"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 22:22:46', '2012-10-20 22:22:46', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 22:22:46', '2012-10-20 22:22:46', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "users"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "password", "password_confirmation", "created_at", "updated_at", "id") VALUES ('Moiz', 'Malik', 'moiz@moiz.org', 'moiz1', 'password', 'password', '2012-10-20 22:22:46', '2012-10-20 22:22:46', 795620373)[0m
+SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "password", "password_confirmation", "created_at", "updated_at", "id") VALUES ('Moiz', 'Malik', 'moiz@moiz.org', 'moiz1', 'password', 'password', '2012-10-20 22:22:46', '2012-10-20 22:22:46', 795620373)
+  [1m[35m (0.5ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM "statuses"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 22:22:46', '2012-10-20 22:22:46', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 22:22:46', '2012-10-20 22:22:46', 298486374)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "users"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "password", "password_confirmation", "created_at", "updated_at", "id") VALUES ('Moiz', 'Malik', 'moiz@moiz.org', 'moiz1', 'password', 'password', '2012-10-20 22:22:46', '2012-10-20 22:22:46', 795620373)
+SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "password", "password_confirmation", "created_at", "updated_at", "id") VALUES ('Moiz', 'Malik', 'moiz@moiz.org', 'moiz1', 'password', 'password', '2012-10-20 22:22:46', '2012-10-20 22:22:46', 795620373)
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.4ms)[0m  [1mDELETE FROM "statuses"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 22:22:46', '2012-10-20 22:22:46', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 22:22:46', '2012-10-20 22:22:46', 298486374)[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "users"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "password", "password_confirmation", "created_at", "updated_at", "id") VALUES ('Moiz', 'Malik', 'moiz@moiz.org', 'moiz1', 'password', 'password', '2012-10-20 22:22:46', '2012-10-20 22:22:46', 795620373)[0m
+SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "password", "password_confirmation", "created_at", "updated_at", "id") VALUES ('Moiz', 'Malik', 'moiz@moiz.org', 'moiz1', 'password', 'password', '2012-10-20 22:22:46', '2012-10-20 22:22:46', 795620373)
+  [1m[35m (0.5ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.7ms)[0m  DELETE FROM "statuses"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 22:24:14', '2012-10-20 22:24:14', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 22:24:14', '2012-10-20 22:24:14', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "users"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "password", "password_confirmation", "created_at", "updated_at", "id") VALUES ('Moiz', 'Malik', 'moiz@moiz.org', 'moiz1', 'password', 'password', '2012-10-20 22:24:14', '2012-10-20 22:24:14', 795620373)
+SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "password", "password_confirmation", "created_at", "updated_at", "id") VALUES ('Moiz', 'Malik', 'moiz@moiz.org', 'moiz1', 'password', 'password', '2012-10-20 22:24:14', '2012-10-20 22:24:14', 795620373)
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.4ms)[0m  [1mDELETE FROM "statuses"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 22:24:14', '2012-10-20 22:24:14', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 22:24:14', '2012-10-20 22:24:14', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "users"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "password", "password_confirmation", "created_at", "updated_at", "id") VALUES ('Moiz', 'Malik', 'moiz@moiz.org', 'moiz1', 'password', 'password', '2012-10-20 22:24:14', '2012-10-20 22:24:14', 795620373)[0m
+SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "password", "password_confirmation", "created_at", "updated_at", "id") VALUES ('Moiz', 'Malik', 'moiz@moiz.org', 'moiz1', 'password', 'password', '2012-10-20 22:24:14', '2012-10-20 22:24:14', 795620373)
+  [1m[35m (0.5ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.4ms)[0m  DELETE FROM "statuses"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 22:24:14', '2012-10-20 22:24:14', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 22:24:14', '2012-10-20 22:24:14', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "users"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "password", "password_confirmation", "created_at", "updated_at", "id") VALUES ('Moiz', 'Malik', 'moiz@moiz.org', 'moiz1', 'password', 'password', '2012-10-20 22:24:14', '2012-10-20 22:24:14', 795620373)
+SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "password", "password_confirmation", "created_at", "updated_at", "id") VALUES ('Moiz', 'Malik', 'moiz@moiz.org', 'moiz1', 'password', 'password', '2012-10-20 22:24:14', '2012-10-20 22:24:14', 795620373)
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.3ms)[0m  [1mDELETE FROM "statuses"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 22:24:14', '2012-10-20 22:24:14', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 22:24:14', '2012-10-20 22:24:14', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "users"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "password", "password_confirmation", "created_at", "updated_at", "id") VALUES ('Moiz', 'Malik', 'moiz@moiz.org', 'moiz1', 'password', 'password', '2012-10-20 22:24:14', '2012-10-20 22:24:14', 795620373)[0m
+SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "password", "password_confirmation", "created_at", "updated_at", "id") VALUES ('Moiz', 'Malik', 'moiz@moiz.org', 'moiz1', 'password', 'password', '2012-10-20 22:24:14', '2012-10-20 22:24:14', 795620373)
+  [1m[35m (0.5ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM "statuses"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 22:24:41', '2012-10-20 22:24:41', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 22:24:41', '2012-10-20 22:24:41', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "users"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "password", "password_confirmation", "created_at", "updated_at", "id") VALUES ('Moiz', 'Malik', 'moiz@moiz.org', 'moiz', 'password', 'password', '2012-10-20 22:24:41', '2012-10-20 22:24:41', 795620373)
+SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "password", "password_confirmation", "created_at", "updated_at", "id") VALUES ('Moiz', 'Malik', 'moiz@moiz.org', 'moiz', 'password', 'password', '2012-10-20 22:24:41', '2012-10-20 22:24:41', 795620373)
+  [1m[36m (1.7ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "statuses"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 22:24:41', '2012-10-20 22:24:41', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 22:24:41', '2012-10-20 22:24:41', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "users"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "password", "password_confirmation", "created_at", "updated_at", "id") VALUES ('Moiz', 'Malik', 'moiz@moiz.org', 'moiz', 'password', 'password', '2012-10-20 22:24:41', '2012-10-20 22:24:41', 795620373)[0m
+SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "password", "password_confirmation", "created_at", "updated_at", "id") VALUES ('Moiz', 'Malik', 'moiz@moiz.org', 'moiz', 'password', 'password', '2012-10-20 22:24:41', '2012-10-20 22:24:41', 795620373)
+  [1m[35m (0.8ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.4ms)[0m  DELETE FROM "statuses"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 22:24:41', '2012-10-20 22:24:41', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 22:24:41', '2012-10-20 22:24:41', 298486374)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "users"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "password", "password_confirmation", "created_at", "updated_at", "id") VALUES ('Moiz', 'Malik', 'moiz@moiz.org', 'moiz', 'password', 'password', '2012-10-20 22:24:41', '2012-10-20 22:24:41', 795620373)
+SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "password", "password_confirmation", "created_at", "updated_at", "id") VALUES ('Moiz', 'Malik', 'moiz@moiz.org', 'moiz', 'password', 'password', '2012-10-20 22:24:41', '2012-10-20 22:24:41', 795620373)
+  [1m[36m (0.7ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.3ms)[0m  [1mDELETE FROM "statuses"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 22:24:41', '2012-10-20 22:24:41', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 22:24:41', '2012-10-20 22:24:41', 298486374)[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "users"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "password", "password_confirmation", "created_at", "updated_at", "id") VALUES ('Moiz', 'Malik', 'moiz@moiz.org', 'moiz', 'password', 'password', '2012-10-20 22:24:41', '2012-10-20 22:24:41', 795620373)[0m
+SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "password", "password_confirmation", "created_at", "updated_at", "id") VALUES ('Moiz', 'Malik', 'moiz@moiz.org', 'moiz', 'password', 'password', '2012-10-20 22:24:41', '2012-10-20 22:24:41', 795620373)
+  [1m[35m (1.0ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.4ms)[0m  DELETE FROM "statuses"
+  [1m[36mFixture Insert (0.3ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 22:25:05', '2012-10-20 22:25:05', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 22:25:05', '2012-10-20 22:25:05', 298486374)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "users"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "password", "password_confirmation", "created_at", "updated_at", "id") VALUES ('Moiz', 'Malik', 'moiz@moiz.org', 'moizkhan', 'password', 'password', '2012-10-20 22:25:05', '2012-10-20 22:25:05', 795620373)
+SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "password", "password_confirmation", "created_at", "updated_at", "id") VALUES ('Moiz', 'Malik', 'moiz@moiz.org', 'moizkhan', 'password', 'password', '2012-10-20 22:25:05', '2012-10-20 22:25:05', 795620373)
+  [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.8ms)[0m  [1mDELETE FROM "statuses"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 22:25:06', '2012-10-20 22:25:06', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 22:25:06', '2012-10-20 22:25:06', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "users"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "password", "password_confirmation", "created_at", "updated_at", "id") VALUES ('Moiz', 'Malik', 'moiz@moiz.org', 'moizkhan', 'password', 'password', '2012-10-20 22:25:06', '2012-10-20 22:25:06', 795620373)[0m
+SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "password", "password_confirmation", "created_at", "updated_at", "id") VALUES ('Moiz', 'Malik', 'moiz@moiz.org', 'moizkhan', 'password', 'password', '2012-10-20 22:25:06', '2012-10-20 22:25:06', 795620373)
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.4ms)[0m  DELETE FROM "statuses"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 22:25:06', '2012-10-20 22:25:06', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 22:25:06', '2012-10-20 22:25:06', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "users"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "password", "password_confirmation", "created_at", "updated_at", "id") VALUES ('Moiz', 'Malik', 'moiz@moiz.org', 'moizkhan', 'password', 'password', '2012-10-20 22:25:06', '2012-10-20 22:25:06', 795620373)
+SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "password", "password_confirmation", "created_at", "updated_at", "id") VALUES ('Moiz', 'Malik', 'moiz@moiz.org', 'moizkhan', 'password', 'password', '2012-10-20 22:25:06', '2012-10-20 22:25:06', 795620373)
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.4ms)[0m  [1mDELETE FROM "statuses"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 22:25:06', '2012-10-20 22:25:06', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 22:25:06', '2012-10-20 22:25:06', 298486374)[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "users"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "password", "password_confirmation", "created_at", "updated_at", "id") VALUES ('Moiz', 'Malik', 'moiz@moiz.org', 'moizkhan', 'password', 'password', '2012-10-20 22:25:06', '2012-10-20 22:25:06', 795620373)[0m
+SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "password", "password_confirmation", "created_at", "updated_at", "id") VALUES ('Moiz', 'Malik', 'moiz@moiz.org', 'moizkhan', 'password', 'password', '2012-10-20 22:25:06', '2012-10-20 22:25:06', 795620373)
+  [1m[35m (0.6ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM "statuses"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 22:25:39', '2012-10-20 22:25:39', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 22:25:39', '2012-10-20 22:25:39', 298486374)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "users"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "created_at", "updated_at", "id") VALUES ('Moiz', 'Malik', 'moiz@moiz.org', 'moizkhan', '2012-10-20 22:25:39', '2012-10-20 22:25:39', 795620373)
+  [1m[36m (2.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."profile_name" IS NULL LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."profile_name" IS NULL LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."profile_name" IS NULL LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 795620373]]
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."profile_name" = 'moizkhan' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM "statuses"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 22:27:39', '2012-10-20 22:27:39', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-20 22:27:39', '2012-10-20 22:27:39', 298486374)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "users"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "created_at", "updated_at", "id") VALUES ('Moiz', 'Malik', 'moiz@moiz.org', 'moizkhan', '2012-10-20 22:27:39', '2012-10-20 22:27:39', 795620373)
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."profile_name" IS NULL LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."profile_name" IS NULL LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."profile_name" IS NULL LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 795620373]]
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."profile_name" = 'moizkhan' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (1.3ms)[0m  DELETE FROM "statuses"
+  [1m[36mFixture Insert (0.6ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-21 00:55:18', '2012-10-21 00:55:18', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-21 00:55:18', '2012-10-21 00:55:18', 298486374)
+  [1m[36mFixture Delete (2.4ms)[0m  [1mDELETE FROM "users"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "created_at", "updated_at", "id") VALUES ('Moiz', 'Malik', 'moiz@moiz.org', 'moizkhan', '2012-10-21 00:55:18', '2012-10-21 00:55:18', 795620373)
+  [1m[36m (4.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."profile_name" IS NULL LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."profile_name" IS NULL LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."profile_name" IS NULL LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 795620373]]
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."profile_name" = 'moizkhan' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.4ms)[0m  DELETE FROM "statuses"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-21 01:01:00', '2012-10-21 01:01:00', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-21 01:01:00', '2012-10-21 01:01:00', 298486374)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "users"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "created_at", "updated_at", "id") VALUES ('Moiz', 'Malik', 'moiz@moiz.org', 'moizkhan', '2012-10-21 01:01:00', '2012-10-21 01:01:00', 795620373)
+  [1m[36m (2.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."profile_name" IS NULL LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."profile_name" IS NULL LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."profile_name" IS NULL LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 795620373]]
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."profile_name" = 'moizkhan' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.7ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM "statuses"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-21 01:25:59', '2012-10-21 01:25:59', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-21 01:25:59', '2012-10-21 01:25:59', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "users"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "created_at", "updated_at", "id") VALUES ('Moiz', 'Malik', 'moiz@moiz.org', 'moizk', '2012-10-21 01:25:59', '2012-10-21 01:25:59', 795620373)
+  [1m[36m (1.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."profile_name" IS NULL LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."profile_name" IS NULL LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."profile_name" IS NULL LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 795620373]]
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."profile_name" = 'moizk' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM "statuses"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-21 01:27:10', '2012-10-21 01:27:10', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-21 01:27:10', '2012-10-21 01:27:10', 298486374)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "users"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "created_at", "updated_at", "id") VALUES ('Moiz', 'Malik', 'moiz@moiz.org', 'moizk', '2012-10-21 01:27:10', '2012-10-21 01:27:10', 795620373)
+  [1m[36m (2.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."profile_name" IS NULL LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."profile_name" IS NULL LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."profile_name" IS NULL LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 795620373]]
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."profile_name" = 'moizk' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM "statuses"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-21 01:36:23', '2012-10-21 01:36:23', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-21 01:36:23', '2012-10-21 01:36:23', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "users"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "created_at", "updated_at", "id") VALUES ('Moiz', 'Malik', 'moiz@moiz.org', 'moizk', '2012-10-21 01:36:23', '2012-10-21 01:36:23', 795620373)
+  [1m[36m (2.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."profile_name" IS NULL LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."profile_name" IS NULL LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."profile_name" IS NULL LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."profile_name" = 'My profile with spaces' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 795620373]]
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."profile_name" = 'moizk' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM "statuses"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-21 01:39:17', '2012-10-21 01:39:17', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-21 01:39:17', '2012-10-21 01:39:17', 298486374)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "users"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "created_at", "updated_at", "id") VALUES ('Moiz', 'Malik', 'moiz@moiz.org', 'moizk', '2012-10-21 01:39:17', '2012-10-21 01:39:17', 795620373)
+  [1m[36m (2.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."profile_name" IS NULL LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."profile_name" IS NULL LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."profile_name" IS NULL LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."profile_name" = 'My profile with spaces' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 795620373]]
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."profile_name" = 'moizk' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM "statuses"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-21 01:40:28', '2012-10-21 01:40:28', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-21 01:40:28', '2012-10-21 01:40:28', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "users"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "created_at", "updated_at", "id") VALUES ('Moiz', 'Malik', 'moiz@moiz.org', 'moizk', '2012-10-21 01:40:28', '2012-10-21 01:40:28', 795620373)
+  [1m[36m (2.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."profile_name" IS NULL LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."profile_name" IS NULL LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."profile_name" IS NULL LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."profile_name" = 'My profile with spaces' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 795620373]]
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."profile_name" = 'moizk' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.6ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.9ms)[0m  DELETE FROM "statuses"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-21 01:46:07', '2012-10-21 01:46:07', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "statuses" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2012-10-21 01:46:07', '2012-10-21 01:46:07', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "users"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "created_at", "updated_at", "id") VALUES ('Moiz', 'Malik', 'moiz@moiz.org', 'moizk', '2012-10-21 01:46:07', '2012-10-21 01:46:07', 795620373)
+  [1m[36m (2.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."profile_name" IS NULL LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."profile_name" IS NULL LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."profile_name" IS NULL LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."profile_name" = 'My profile with spaces' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 795620373]]
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."profile_name" = 'moizk' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
