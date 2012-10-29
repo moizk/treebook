@@ -24264,3 +24264,532 @@ ActionController::RoutingError (No route matches [GET] "/moiz"):
 
   Rendered /Users/moizkhanmalik/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.3ms)
 Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+
+
+Started GET "/moiz" for 127.0.0.1 at 2012-10-29 15:35:13 -0400
+
+ActionController::RoutingError (No route matches [GET] "/moiz"):
+  actionpack (3.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.6) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.6) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.6) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.6) lib/rails/engine.rb:479:in `call'
+  railties (3.2.6) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.6) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/moizkhanmalik/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/moizkhanmalik/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/moizkhanmalik/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/moizkhanmalik/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.2ms)
+
+
+Started GET "/moiz" for 127.0.0.1 at 2012-10-29 15:36:11 -0400
+Processing by ProfilesController#show as HTML
+  Parameters: {"id"=>"moiz"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."profile_name" = 'moiz' LIMIT 1[0m
+  [1m[35mStatus Load (0.1ms)[0m  SELECT "statuses".* FROM "statuses" 
+  Rendered profiles/show.html.erb within layouts/application (0.4ms)
+Compiled profiles.css  (7ms)  (pid 31822)
+Compiled application.css  (16ms)  (pid 31822)
+Compiled profiles.js  (259ms)  (pid 31822)
+Compiled application.js  (269ms)  (pid 31822)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+Completed 200 OK in 490ms (Views: 411.8ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-29 15:36:11 -0400
+Served asset /application.css - 304 Not Modified (48ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2012-10-29 15:36:11 -0400
+Served asset /bootstrap.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/login.css?body=1" for 127.0.0.1 at 2012-10-29 15:36:11 -0400
+Served asset /login.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-10-29 15:36:11 -0400
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/profiles.css?body=1" for 127.0.0.1 at 2012-10-29 15:36:11 -0400
+Served asset /profiles.css - 200 OK (2ms)
+
+
+Started GET "/assets/statuses.css?body=1" for 127.0.0.1 at 2012-10-29 15:36:11 -0400
+Served asset /statuses.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-29 15:36:11 -0400
+Served asset /jquery.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-29 15:36:11 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2012-10-29 15:36:11 -0400
+Served asset /bootstrap.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/profiles.js?body=1" for 127.0.0.1 at 2012-10-29 15:36:11 -0400
+Served asset /profiles.js - 200 OK (2ms)
+
+
+Started GET "/assets/statuses.js?body=1" for 127.0.0.1 at 2012-10-29 15:36:11 -0400
+Served asset /statuses.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-29 15:36:11 -0400
+Served asset /application.js - 304 Not Modified (8ms)
+
+
+Started GET "/moiz" for 127.0.0.1 at 2012-10-29 15:38:53 -0400
+Processing by ProfilesController#show as HTML
+  Parameters: {"id"=>"moiz"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."profile_name" = 'moiz' LIMIT 1
+  [1m[36mStatus Load (0.2ms)[0m  [1mSELECT "statuses".* FROM "statuses" [0m
+ERROR: compiling _app_views_profiles_show_html_erb__662498068298366861_70170205873840 RAISED /Users/moizkhanmalik/Sites/treebook/app/views/profiles/show.html.erb:10: syntax error, unexpected ',', expecting ')'
+...go_in_words(status.created_at), status_path(status) );@outpu...
+...                               ^
+Function body:           def _app_views_profiles_show_html_erb__662498068298366861_70170205873840(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "profiles/show";_old_output_buffer = @output_buffer;;@output_buffer = output_buffer || ActionView::OutputBuffer.new;@output_buffer.safe_concat('<div class="page-header">
+<h1>');@output_buffer.append= ( @user.full_name );@output_buffer.safe_concat('</h1>
+</div>
+
+'); if @statuses 
+	 @statuses.each do |status| 
+@output_buffer.safe_concat('		<div class="well">
+			');@output_buffer.append= ( status.content );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('			<hr />
+			');@output_buffer.append= ( time_ago_in_words(status.created_at), status_path(status) );@output_buffer.safe_concat(' ago
+		</div>
+');		 end 
+@output_buffer.safe_concat('	'); end ;@output_buffer.to_s
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+
+Backtrace: /Users/moizkhanmalik/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.6/lib/action_view/template.rb:297:in `module_eval'
+/Users/moizkhanmalik/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.6/lib/action_view/template.rb:297:in `compile'
+/Users/moizkhanmalik/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.6/lib/action_view/template.rb:244:in `block in compile!'
+<internal:prelude>:10:in `synchronize'
+/Users/moizkhanmalik/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.6/lib/action_view/template.rb:232:in `compile!'
+/Users/moizkhanmalik/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.6/lib/action_view/template.rb:144:in `block in render'
+/Users/moizkhanmalik/.rvm/gems/ruby-1.9.3-p194/gems/activesupport-3.2.6/lib/active_support/notifications.rb:125:in `instrument'
+/Users/moizkhanmalik/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.6/lib/action_view/template.rb:143:in `render'
+/Users/moizkhanmalik/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.6/lib/action_view/renderer/template_renderer.rb:47:in `block (2 levels) in render_template'
+/Users/moizkhanmalik/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.6/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+/Users/moizkhanmalik/.rvm/gems/ruby-1.9.3-p194/gems/activesupport-3.2.6/lib/active_support/notifications.rb:123:in `block in instrument'
+/Users/moizkhanmalik/.rvm/gems/ruby-1.9.3-p194/gems/activesupport-3.2.6/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/Users/moizkhanmalik/.rvm/gems/ruby-1.9.3-p194/gems/activesupport-3.2.6/lib/active_support/notifications.rb:123:in `instrument'
+/Users/moizkhanmalik/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.6/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+/Users/moizkhanmalik/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.6/lib/action_view/renderer/template_renderer.rb:46:in `block in render_template'
+/Users/moizkhanmalik/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.6/lib/action_view/renderer/template_renderer.rb:54:in `render_with_layout'
+/Users/moizkhanmalik/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.6/lib/action_view/renderer/template_renderer.rb:45:in `render_template'
+/Users/moizkhanmalik/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.6/lib/action_view/renderer/template_renderer.rb:18:in `render'
+/Users/moizkhanmalik/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.6/lib/action_view/renderer/renderer.rb:36:in `render_template'
+/Users/moizkhanmalik/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.6/lib/action_view/renderer/renderer.rb:17:in `render'
+/Users/moizkhanmalik/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.6/lib/abstract_controller/rendering.rb:110:in `_render_template'
+/Users/moizkhanmalik/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.6/lib/action_controller/metal/streaming.rb:225:in `_render_template'
+/Users/moizkhanmalik/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.6/lib/abstract_controller/rendering.rb:103:in `render_to_body'
+/Users/moizkhanmalik/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.6/lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+/Users/moizkhanmalik/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.6/lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+/Users/moizkhanmalik/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.6/lib/abstract_controller/rendering.rb:88:in `render'
+/Users/moizkhanmalik/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.6/lib/action_controller/metal/rendering.rb:16:in `render'
+/Users/moizkhanmalik/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.6/lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+/Users/moizkhanmalik/.rvm/gems/ruby-1.9.3-p194/gems/activesupport-3.2.6/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+/Users/moizkhanmalik/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/benchmark.rb:295:in `realtime'
+/Users/moizkhanmalik/.rvm/gems/ruby-1.9.3-p194/gems/activesupport-3.2.6/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/Users/moizkhanmalik/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.6/lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+/Users/moizkhanmalik/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.6/lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+/Users/moizkhanmalik/.rvm/gems/ruby-1.9.3-p194/gems/activerecord-3.2.6/lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+/Users/moizkhanmalik/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.6/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/Users/moizkhanmalik/Sites/treebook/app/controllers/profiles_controller.rb:6:in `show'
+/Users/moizkhanmalik/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.6/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+/Users/moizkhanmalik/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.6/lib/abstract_controller/base.rb:167:in `process_action'
+/Users/moizkhanmalik/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.6/lib/action_controller/metal/rendering.rb:10:in `process_action'
+/Users/moizkhanmalik/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.6/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/Users/moizkhanmalik/.rvm/gems/ruby-1.9.3-p194/gems/activesupport-3.2.6/lib/active_support/callbacks.rb:414:in `_run__4397609562065566935__process_action__2038444330432503060__callbacks'
+/Users/moizkhanmalik/.rvm/gems/ruby-1.9.3-p194/gems/activesupport-3.2.6/lib/active_support/callbacks.rb:405:in `__run_callback'
+/Users/moizkhanmalik/.rvm/gems/ruby-1.9.3-p194/gems/activesupport-3.2.6/lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+/Users/moizkhanmalik/.rvm/gems/ruby-1.9.3-p194/gems/activesupport-3.2.6/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/Users/moizkhanmalik/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.6/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/Users/moizkhanmalik/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.6/lib/action_controller/metal/rescue.rb:29:in `process_action'
+/Users/moizkhanmalik/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.6/lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+/Users/moizkhanmalik/.rvm/gems/ruby-1.9.3-p194/gems/activesupport-3.2.6/lib/active_support/notifications.rb:123:in `block in instrument'
+/Users/moizkhanmalik/.rvm/gems/ruby-1.9.3-p194/gems/activesupport-3.2.6/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/Users/moizkhanmalik/.rvm/gems/ruby-1.9.3-p194/gems/activesupport-3.2.6/lib/active_support/notifications.rb:123:in `instrument'
+/Users/moizkhanmalik/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.6/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/Users/moizkhanmalik/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.6/lib/action_controller/metal/params_wrapper.rb:206:in `process_action'
+/Users/moizkhanmalik/.rvm/gems/ruby-1.9.3-p194/gems/activerecord-3.2.6/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+/Users/moizkhanmalik/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.6/lib/abstract_controller/base.rb:121:in `process'
+/Users/moizkhanmalik/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.6/lib/abstract_controller/rendering.rb:45:in `process'
+/Users/moizkhanmalik/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.6/lib/action_controller/metal.rb:203:in `dispatch'
+/Users/moizkhanmalik/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.6/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/Users/moizkhanmalik/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.6/lib/action_controller/metal.rb:246:in `block in action'
+/Users/moizkhanmalik/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.6/lib/action_dispatch/routing/route_set.rb:73:in `call'
+/Users/moizkhanmalik/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.6/lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+/Users/moizkhanmalik/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.6/lib/action_dispatch/routing/route_set.rb:36:in `call'
+/Users/moizkhanmalik/.rvm/gems/ruby-1.9.3-p194/gems/journey-1.0.4/lib/journey/router.rb:68:in `block in call'
+/Users/moizkhanmalik/.rvm/gems/ruby-1.9.3-p194/gems/journey-1.0.4/lib/journey/router.rb:56:in `each'
+/Users/moizkhanmalik/.rvm/gems/ruby-1.9.3-p194/gems/journey-1.0.4/lib/journey/router.rb:56:in `call'
+/Users/moizkhanmalik/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.6/lib/action_dispatch/routing/route_set.rb:600:in `call'
+/Users/moizkhanmalik/.rvm/gems/ruby-1.9.3-p194/gems/warden-1.2.1/lib/warden/manager.rb:35:in `block in call'
+/Users/moizkhanmalik/.rvm/gems/ruby-1.9.3-p194/gems/warden-1.2.1/lib/warden/manager.rb:34:in `catch'
+/Users/moizkhanmalik/.rvm/gems/ruby-1.9.3-p194/gems/warden-1.2.1/lib/warden/manager.rb:34:in `call'
+/Users/moizkhanmalik/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.6/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/Users/moizkhanmalik/.rvm/gems/ruby-1.9.3-p194/gems/rack-1.4.1/lib/rack/etag.rb:23:in `call'
+/Users/moizkhanmalik/.rvm/gems/ruby-1.9.3-p194/gems/rack-1.4.1/lib/rack/conditionalget.rb:25:in `call'
+/Users/moizkhanmalik/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.6/lib/action_dispatch/middleware/head.rb:14:in `call'
+/Users/moizkhanmalik/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.6/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/Users/moizkhanmalik/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.6/lib/action_dispatch/middleware/flash.rb:242:in `call'
+/Users/moizkhanmalik/.rvm/gems/ruby-1.9.3-p194/gems/rack-1.4.1/lib/rack/session/abstract/id.rb:205:in `context'
+/Users/moizkhanmalik/.rvm/gems/ruby-1.9.3-p194/gems/rack-1.4.1/lib/rack/session/abstract/id.rb:200:in `call'
+/Users/moizkhanmalik/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.6/lib/action_dispatch/middleware/cookies.rb:338:in `call'
+/Users/moizkhanmalik/.rvm/gems/ruby-1.9.3-p194/gems/activerecord-3.2.6/lib/active_record/query_cache.rb:64:in `call'
+/Users/moizkhanmalik/.rvm/gems/ruby-1.9.3-p194/gems/activerecord-3.2.6/lib/active_record/connection_adapters/abstract/connection_pool.rb:473:in `call'
+/Users/moizkhanmalik/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.6/lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+/Users/moizkhanmalik/.rvm/gems/ruby-1.9.3-p194/gems/activesupport-3.2.6/lib/active_support/callbacks.rb:405:in `_run__89132082926615398__call__4020306473588231462__callbacks'
+/Users/moizkhanmalik/.rvm/gems/ruby-1.9.3-p194/gems/activesupport-3.2.6/lib/active_support/callbacks.rb:405:in `__run_callback'
+/Users/moizkhanmalik/.rvm/gems/ruby-1.9.3-p194/gems/activesupport-3.2.6/lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+/Users/moizkhanmalik/.rvm/gems/ruby-1.9.3-p194/gems/activesupport-3.2.6/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/Users/moizkhanmalik/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.6/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+/Users/moizkhanmalik/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.6/lib/action_dispatch/middleware/reloader.rb:65:in `call'
+/Users/moizkhanmalik/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.6/lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+/Users/moizkhanmalik/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.6/lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+/Users/moizkhanmalik/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.6/lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+/Users/moizkhanmalik/.rvm/gems/ruby-1.9.3-p194/gems/railties-3.2.6/lib/rails/rack/logger.rb:26:in `call_app'
+/Users/moizkhanmalik/.rvm/gems/ruby-1.9.3-p194/gems/railties-3.2.6/lib/rails/rack/logger.rb:16:in `call'
+/Users/moizkhanmalik/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.6/lib/action_dispatch/middleware/request_id.rb:22:in `call'
+/Users/moizkhanmalik/.rvm/gems/ruby-1.9.3-p194/gems/rack-1.4.1/lib/rack/methodoverride.rb:21:in `call'
+/Users/moizkhanmalik/.rvm/gems/ruby-1.9.3-p194/gems/rack-1.4.1/lib/rack/runtime.rb:17:in `call'
+/Users/moizkhanmalik/.rvm/gems/ruby-1.9.3-p194/gems/activesupport-3.2.6/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/Users/moizkhanmalik/.rvm/gems/ruby-1.9.3-p194/gems/rack-1.4.1/lib/rack/lock.rb:15:in `call'
+/Users/moizkhanmalik/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.6/lib/action_dispatch/middleware/static.rb:62:in `call'
+/Users/moizkhanmalik/.rvm/gems/ruby-1.9.3-p194/gems/railties-3.2.6/lib/rails/engine.rb:479:in `call'
+/Users/moizkhanmalik/.rvm/gems/ruby-1.9.3-p194/gems/railties-3.2.6/lib/rails/application.rb:220:in `call'
+/Users/moizkhanmalik/.rvm/gems/ruby-1.9.3-p194/gems/rack-1.4.1/lib/rack/content_length.rb:14:in `call'
+/Users/moizkhanmalik/.rvm/gems/ruby-1.9.3-p194/gems/railties-3.2.6/lib/rails/rack/log_tailer.rb:17:in `call'
+/Users/moizkhanmalik/.rvm/gems/ruby-1.9.3-p194/gems/rack-1.4.1/lib/rack/handler/webrick.rb:59:in `service'
+/Users/moizkhanmalik/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+/Users/moizkhanmalik/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+/Users/moizkhanmalik/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+  Rendered profiles/show.html.erb within layouts/application (10.7ms)
+Completed 500 Internal Server Error in 17ms
+
+ActionView::Template::Error (/Users/moizkhanmalik/Sites/treebook/app/views/profiles/show.html.erb:10: syntax error, unexpected ',', expecting ')'
+...go_in_words(status.created_at), status_path(status) );@outpu...
+...                               ^):
+    7: 		<div class="well">
+    8: 			<%= status.content %>
+    9: 			<hr />
+    10: 			<%= time_ago_in_words(status.created_at), status_path(status) %> ago
+    11: 		</div>
+    12: 		<% end %>
+    13: 	<% end %>
+  app/controllers/profiles_controller.rb:6:in `show'
+
+
+  Rendered /Users/moizkhanmalik/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.erb (5.0ms)
+  Rendered /Users/moizkhanmalik/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /Users/moizkhanmalik/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (18.8ms)
+
+
+Started GET "/moiz" for 127.0.0.1 at 2012-10-29 15:39:07 -0400
+Processing by ProfilesController#show as HTML
+  Parameters: {"id"=>"moiz"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."profile_name" = 'moiz' LIMIT 1
+  [1m[36mStatus Load (0.1ms)[0m  [1mSELECT "statuses".* FROM "statuses" [0m
+  Rendered profiles/show.html.erb within layouts/application (14.3ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1
+Completed 200 OK in 60ms (Views: 57.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-29 15:39:07 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profiles.css?body=1" for 127.0.0.1 at 2012-10-29 15:39:07 -0400
+Served asset /profiles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2012-10-29 15:39:07 -0400
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/statuses.css?body=1" for 127.0.0.1 at 2012-10-29 15:39:07 -0400
+Served asset /statuses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-10-29 15:39:07 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/login.css?body=1" for 127.0.0.1 at 2012-10-29 15:39:07 -0400
+Served asset /login.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-29 15:39:07 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-29 15:39:07 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2012-10-29 15:39:07 -0400
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/statuses.js?body=1" for 127.0.0.1 at 2012-10-29 15:39:07 -0400
+Served asset /statuses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profiles.js?body=1" for 127.0.0.1 at 2012-10-29 15:39:07 -0400
+Served asset /profiles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-29 15:39:07 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/statuses/11" for 127.0.0.1 at 2012-10-29 15:41:00 -0400
+Processing by StatusesController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mStatus Load (0.3ms)[0m  [1mSELECT "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1[0m  [["id", "11"]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1
+  Rendered statuses/show.html.erb within layouts/application (18.6ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+Completed 200 OK in 29ms (Views: 26.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-29 15:41:00 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/login.css?body=1" for 127.0.0.1 at 2012-10-29 15:41:00 -0400
+Served asset /login.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-10-29 15:41:00 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/statuses.css?body=1" for 127.0.0.1 at 2012-10-29 15:41:00 -0400
+Served asset /statuses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profiles.css?body=1" for 127.0.0.1 at 2012-10-29 15:41:00 -0400
+Served asset /profiles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2012-10-29 15:41:00 -0400
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-29 15:41:00 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-29 15:41:00 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2012-10-29 15:41:00 -0400
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/statuses.js?body=1" for 127.0.0.1 at 2012-10-29 15:41:00 -0400
+Served asset /statuses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profiles.js?body=1" for 127.0.0.1 at 2012-10-29 15:41:00 -0400
+Served asset /profiles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-29 15:41:00 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/feed" for 127.0.0.1 at 2012-10-29 15:41:02 -0400
+Processing by StatusesController#index as HTML
+  [1m[35mStatus Load (0.2ms)[0m  SELECT "statuses".* FROM "statuses" 
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1
+  Rendered statuses/index.html.erb within layouts/application (8.4ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+Completed 200 OK in 17ms (Views: 15.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-29 15:41:02 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2012-10-29 15:41:02 -0400
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profiles.css?body=1" for 127.0.0.1 at 2012-10-29 15:41:02 -0400
+Served asset /profiles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-10-29 15:41:02 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/login.css?body=1" for 127.0.0.1 at 2012-10-29 15:41:02 -0400
+Served asset /login.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/statuses.css?body=1" for 127.0.0.1 at 2012-10-29 15:41:02 -0400
+Served asset /statuses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-29 15:41:02 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-29 15:41:02 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2012-10-29 15:41:02 -0400
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profiles.js?body=1" for 127.0.0.1 at 2012-10-29 15:41:02 -0400
+Served asset /profiles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/statuses.js?body=1" for 127.0.0.1 at 2012-10-29 15:41:02 -0400
+Served asset /statuses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-29 15:41:02 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/statuses/11" for 127.0.0.1 at 2012-10-29 15:41:15 -0400
+Processing by StatusesController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[35mStatus Load (0.1ms)[0m  SELECT "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1  [["id", "11"]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+  Rendered statuses/show.html.erb within layouts/application (1.7ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1
+Completed 200 OK in 11ms (Views: 9.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-29 15:41:15 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profiles.css?body=1" for 127.0.0.1 at 2012-10-29 15:41:15 -0400
+Served asset /profiles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/statuses.css?body=1" for 127.0.0.1 at 2012-10-29 15:41:15 -0400
+Served asset /statuses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2012-10-29 15:41:15 -0400
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-29 15:41:15 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-10-29 15:41:15 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2012-10-29 15:41:15 -0400
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-29 15:41:15 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profiles.js?body=1" for 127.0.0.1 at 2012-10-29 15:41:15 -0400
+Served asset /profiles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/statuses.js?body=1" for 127.0.0.1 at 2012-10-29 15:41:15 -0400
+Served asset /statuses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-29 15:41:15 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/moiz" for 127.0.0.1 at 2012-10-29 15:41:19 -0400
+Processing by ProfilesController#show as HTML
+  Parameters: {"id"=>"moiz"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."profile_name" = 'moiz' LIMIT 1[0m
+  [1m[35mStatus Load (0.2ms)[0m  SELECT "statuses".* FROM "statuses" 
+  Rendered profiles/show.html.erb within layouts/application (1.7ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+Completed 200 OK in 17ms (Views: 14.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/login.css?body=1" for 127.0.0.1 at 2012-10-29 15:41:19 -0400
+Served asset /login.css - 200 OK (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-29 15:41:19 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profiles.css?body=1" for 127.0.0.1 at 2012-10-29 15:41:19 -0400
+Served asset /profiles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-10-29 15:41:19 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2012-10-29 15:41:19 -0400
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-29 15:41:19 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/statuses.css?body=1" for 127.0.0.1 at 2012-10-29 15:41:20 -0400
+Served asset /statuses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-29 15:41:20 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2012-10-29 15:41:20 -0400
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profiles.js?body=1" for 127.0.0.1 at 2012-10-29 15:41:20 -0400
+Served asset /profiles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-29 15:41:20 -0400
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/statuses.js?body=1" for 127.0.0.1 at 2012-10-29 15:41:20 -0400
+Served asset /statuses.js - 304 Not Modified (0ms)

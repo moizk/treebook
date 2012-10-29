@@ -3,3 +3,9 @@ moiz:
   last_name: "Malik"
   email: "moiz@moiz.org"
   profile_name: "moizk"
+  
+alex: 
+  first_name: "Alex"
+  last_name: "Dimitriyadi"
+  email: "alex@alex.org"
+  profile_name: "alex"
