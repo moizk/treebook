@@ -9,3 +9,9 @@ alex:
   last_name: "Dimitriyadi"
   email: "alex@alex.org"
   profile_name: "alex"
+
+mike:
+  first_name: "Mike"
+  last_name: "The Frog"
+  email: "mike@teamtreehouse.com"
+  profile_name: mikethefrog

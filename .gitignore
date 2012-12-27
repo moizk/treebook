@@ -2,3 +2,11 @@
 .DS_Store
 
 log/development.log
+
+log/test.log
+
+log/test.log
+
+log/test.log
+
+*.log
