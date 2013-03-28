@@ -3,8 +3,9 @@ moiz:
   last_name: "Malik"
   email: "moiz@moiz.org"
   profile_name: "moizk"
-  
-alex: 
+  encrypted_password: $2a$10$Fh/Hm8RxDsuPTeBUr6864.GARlcmt7zF2WspaXGr3BIv2C27N.osq
+
+alex:
   first_name: "Alex"
   last_name: "Dimitriyadi"
   email: "alex@alex.org"
