@@ -15,11 +15,6 @@ class UserFriendshipsController < ApplicationController
 		redirect_to user_friendships_path
 	end
 
-	def edit
-		@user_friendship = current_user.user_friendships.find(params[:id])
-		@friend = @user_friendship.friend
-	end
-
 	def new
 		if params[:friend_id]
 			@friend = User.where(profile_name: params[:friend_id]).first
@@ -47,6 +42,11 @@ class UserFriendshipsController < ApplicationController
 			flash[:error] = "Friend required"
 			redirect_to root_path
 		end
+	end
+
+	def edit
+		@user_friendship = current_user.user_friendships.find(params[:id]).decorate
+		@friend = @user_friendship.friend
 	end
 
 	def destroy
