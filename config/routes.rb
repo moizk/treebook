@@ -1,4 +1,4 @@
-Treebook::Application.routes.draw do
+ Treebook::Application.routes.draw do
 
   as :user do
     get '/register', to: 'devise/registrations#new',via: :get, as: :register
@@ -15,6 +15,9 @@ Treebook::Application.routes.draw do
   end
 
   resources :user_friendships do
+    member do
+      put :accept
+    end
   end
 
   resources :statuses
