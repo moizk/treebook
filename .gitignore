@@ -50,3 +50,5 @@ tmp/cache/assets/D67/810/sprockets%2Fbb5f905c0196c803d14db6feadd56261
 tmp/cache/assets/D5D/950/sprockets%2Fb5daba4258517e213db39d16d731dcc1
 
 db/development.sqlite3
+
+db/test.sqlite3
